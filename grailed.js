@@ -1,7 +1,10 @@
 const puppeteer = require('puppeteer')
 
-//Brand
+//Chrome Hearts
 const URL = 'https://www.grailed.com/shop/WWLr3K0IrQ'
+
+// Supreme
+// const URL = 'https://www.grailed.com/shop/XVLWhh5JTA'
 
 const self = {
 	browser: null,
@@ -12,12 +15,10 @@ const self = {
 			headless: false
 		});
 		self.page = await self.browser.newPage();
-
 		await self.page.goto(URL, { waitUntil: 'networkidle0' })
-		
 	},
 
-	getResults: async (numberOfResults) => {
+	getResults: async () => {
 		let elements = await self.page.$$('div[class*="feed"] > div[class*="feed-item"]')
 		// let results = []
 		for (let el of elements) {
@@ -35,6 +36,8 @@ const self = {
 			// 	time,
 			// 	link,
 			// })
+
+			
 
 			console.log(
 				` Item: ${title}\n Size: ${size}\n Price: ${price}\n Time Posted: ${time}\n View: https://www.grailed.com${link}\n\n`
