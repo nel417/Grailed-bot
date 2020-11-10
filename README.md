@@ -1,5 +1,6 @@
 # Grailed-bot
 Grailed bot to scrape for chrome hearts (or whatever url you use)   
+
 ![CLI Interface](https://user-images.githubusercontent.com/45861790/98693144-8c5bd700-2335-11eb-9d42-3118118dceca.png)
 
 ## Installation
@@ -11,10 +12,16 @@ npm install
 ```
 
 ## Usage
+
 Replace url with the brand you want to preview. The stock URL will display the first page of Chrome Hearts.
 
 ```javascript
 const URL = 'https://www.grailed.com/shop/WWLr3K0IrQ'
+```
+
+run
+```bash
+node index.js
 ```
 
 The scraper is set to be a quick console app, but if you want to house your data, there's a way to push to an array. Just uncomment.
