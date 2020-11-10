@@ -33,7 +33,8 @@ return results;
 ```
 
 ## TODO   
-Add pagination for infinite scroll so you dont get the "cant find selector" error when you hit the last post.
+Add pagination for infinite scroll so you dont get the "cant find selector" error when you hit the last post.   
+Add cron job to run every 30 minutes.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
